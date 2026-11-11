@@ -1,361 +1,130 @@
-# 💸 App de Organização de Finanças Pessoais
+# 💰 Fina — Finanças Pessoais por Conversa
 
-PRD refinado:
+<p align="center">
+  <img src="src/assets/fina-logo.png" alt="Logo Fina" width="120" />
+</p>
 
-```
-# Personal Finance Chat
+<p align="center">
+  <strong>Uma assistente financeira inteligente com IA que entende linguagem natural para registrar gastos, ganhos e metas sem planilhas e sem complicação.</strong>
+</p>
 
-## Product Vision
-
-Aplicativo web de finanças pessoais que permita aos usuários controlar receitas, despesas e metas financeiras através de conversas em linguagem natural.
-Um produto extremamente simples, focado em iniciantes que não gostam de planilhas ou aplicativos financeiros complexos.
-A principal proposta de valor é permitir que qualquer pessoa organize sua vida financeira apenas conversando com um assistente virtual.
-
----
-
-# Problem
-
-Muitas pessoas desejam controlar suas finanças, mas abandonam rapidamente aplicativos tradicionais devido a:
-
-- Excesso de formulários.
-- Interfaces complexas.
-- Curva de aprendizado alta.
-- Falta de personalização.
-- Pouco suporte educacional.
-
-O resultado é a falta de controle sobre gastos, dívidas e objetivos financeiros.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react" alt="React 19" />
+  <img src="https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/TanStack%20Start-FullStack-orange?style=for-the-badge" alt="TanStack Start" />
+  <img src="https://img.shields.io/badge/TailwindCSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Supabase-Auth%20%26%20Database-3ECF8E?style=for-the-badge&logo=supabase" alt="Supabase" />
+</p>
 
 ---
 
-# Target Users
+## 📸 Demonstração e Telas do App
 
-## Primary Users
+> *Adicione as capturas de tela do projeto na pasta `/docs/screenshots` ou referencie os links aqui.*
 
-Pessoas entre 18 e 45 anos que:
+### 1. Autenticação e Boas-Vindas
+| Login & Cadastro | Apresentação / Onboarding |
+| :---: | :---: |
+| *(coloque aqui o print da tela de login)* | *(coloque aqui o print do onboarding da Fina)* |
 
-- Nunca utilizaram aplicativos financeiros.
-- Não gostam de planilhas.
-- Possuem pouco conhecimento financeiro.
-- Querem uma solução simples e prática.
+### 2. Conversa Inteligente (Chat com a Fina)
+| Chat em Ação | Sugestões Rápidas |
+| :---: | :---: |
+| *(coloque aqui o print do chat com a Fina anotando um gasto)* | *(coloque aqui o print das opções rápidas)* |
 
-## User Goals
-
-- Registrar gastos rapidamente.
-- Entender para onde o dinheiro está indo.
-- Criar hábitos financeiros melhores.
-- Economizar dinheiro.
-- Atingir metas financeiras.
-
----
-
-# Product Principles
-
-## Conversational First
-
-A conversa deve ser a principal forma de interação.
-O usuário deve conseguir utilizar o aplicativo sem precisar preencher formulários complexos.
-
-## Simplicity
-
-Toda funcionalidade deve ser simples e intuitiva.
-
-## Universal Design
-
-O sistema deve ser acessível para o maior número possível de pessoas.
-
-Princípios:
-
-- Linguagem simples.
-- Botões grandes.
-- Alto contraste.
-- Interface limpa.
-- Baixa carga cognitiva.
-- Design responsivo.
-- Acessibilidade básica.
-
-## Educational Experience
-
-O aplicativo deve ensinar educação financeira de forma leve durante o uso.
+### 3. Painel Financeiro e Metas
+| Painel com Gráficos e Alertas | Metas com Barra de Progresso |
+| :---: | :---: |
+| *(coloque aqui o print do painel)* | *(coloque aqui o print das metas)* |
 
 ---
 
-# MVP Features
+## ✨ Funcionalidades Principais
 
-## Feature 1 - Financial Chat
-
-O usuário pode enviar mensagens em linguagem natural.
-
-Exemplos:
-
-"Gastei R$ 50 no almoço."
-
-"Recebi R$ 2500 de salário."
-
-"Comprei remédios por R$ 40."
-
-O sistema deve identificar automaticamente:
-
-- Tipo da movimentação.
-- Valor.
-- Categoria.
-- Data.
+- 🤖 **Assistente com IA em Linguagem Natural:** Entende frases cotidianas como *"Gastei R$ 50 no almoço"* ou *"Recebi R$ 2.500 de salário"* e categoriza automaticamente valor, tipo, data e categoria.
+- 📊 **Painel Financeiro em Tempo Real:**
+  - Saldo acumulado, receitas e despesas mensais.
+  - Gráfico de pizza por categoria (Alimentação, Transporte, Moradia, etc.).
+  - Evolução mensal dos últimos 6 meses com gráfico de barras.
+  - Alertas automáticos inteligentes (ex.: *"Seus gastos com Lazer subiram 20% neste mês"*).
+- 🎯 **Gestão de Metas:**
+  - Criação de objetivos financeiros (Viagem, Reserva de Emergência, etc.).
+  - Barras de progresso com cálculo percentual em tempo real.
+  - Adicionar e retirar valores guardados com 1 clique.
+- 👤 **Perfil e Preferências:**
+  - Edição de nome, ativação/desativação de dicas educativas de finanças e limpeza de histórico.
+- 📱 **Mobile-First & UI Fluida:**
+  - Desenvolvido pensado em usabilidade móvel com TanStack Router, Tailwind CSS e componentes Radix UI.
+- 🔒 **Autenticação:**
+  - Login seguro via Supabase Auth (E-mail/Senha e Google OAuth), além de modo visitante para testes locais rápidos.
 
 ---
 
-## Feature 2 - Automatic Categorization
+## 🛠️ Tecnologias Utilizadas
 
-Categorias iniciais:
-
-- Alimentação
-- Transporte
-- Moradia
-- Saúde
-- Educação
-- Lazer
-- Compras
-- Outros
-
-O sistema deve atribuir categorias automaticamente.
+- **Framework Full-Stack:** [TanStack Start](https://tanstack.com/start) + [Vite](https://vitejs.dev/)
+- **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
+- **Interface e Estilização:** [React 19](https://react.dev/), [Tailwind CSS v4](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), [Lucide React](https://lucide.dev/)
+- **Gráficos:** [Recharts](https://recharts.org/)
+- **Gerenciamento de Estado de Servidor:** [TanStack Query (React Query)](https://tanstack.com/query)
+- **Backend & Banco de Dados:** [Supabase](https://supabase.com/) (PostgreSQL, Row Level Security, Auth)
+- **Agente de IA:** Modelos LLM via gateway integrado com Function Calling inteligente para registro de transações e resumos.
+- **Testes Automatizados:** [Vitest](https://vitest.dev/)
 
 ---
 
-## Feature 3 - Dashboard
+## 🚀 Como Executar o Projeto Localmente
 
-Criar um dashboard simples contendo:
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) (versão 20 ou superior recomendada)
+- `npm` ou `bun`
 
-- Total de receitas.
-- Total de despesas.
-- Saldo atual.
-- Gastos por categoria.
-- Evolução mensal.
+### Passo a Passo
 
-Utilizar gráficos simples e legíveis.
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/fina-app.git
+   cd fina-app
+   ```
 
----
+2. **Instale as dependências:**
+   ```bash
+   npm install --ignore-scripts
+   ```
 
-## Feature 4 - Financial Goals
+3. **Configure as variáveis de ambiente:**
+   Crie um arquivo `.env` na raiz com as chaves do seu Supabase (ou use as configurações locais):
+   ```env
+   VITE_SUPABASE_URL="https://sua-url.supabase.co"
+   VITE_SUPABASE_PUBLISHABLE_KEY="sua-chave-publica"
+   ```
 
-Permitir criação de metas financeiras.
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
 
-Exemplos:
-
-- Reserva de emergência.
-- Viagem.
-- Novo computador.
-- Curso.
-
-Cada meta deve mostrar:
-
-- Valor alvo.
-- Valor atual.
-- Percentual concluído.
-
----
-
-## Feature 5 - Financial Assistant
-
-Criar um agente financeiro virtual.
-
-Responsabilidades:
-
-- Identificar padrões de gasto.
-- Gerar dicas de economia.
-- Alertar sobre excessos.
-- Incentivar hábitos financeiros saudáveis.
-
-Exemplo:
-
-"Seus gastos com delivery aumentaram 20% neste mês."
+5. **Abra no navegador:**
+   Acesse [http://localhost:8080](http://localhost:8080)
 
 ---
 
-# Main User Flow
+## 🧪 Testes
 
-## First Access
+Para rodar a suíte de testes unitários do vitest:
 
-1. Usuário cria conta.
-2. Sistema apresenta onboarding simples.
-3. Usuário registra primeira movimentação.
-4. Dashboard é atualizado.
-5. Sistema apresenta primeiro insight.
-
----
-
-## Daily Usage
-
-1. Usuário envia mensagem.
-2. Sistema interpreta.
-3. Sistema registra a movimentação.
-4. Dashboard é atualizado.
-5. Agente financeiro gera sugestões quando aplicável.
-
----
-
-# Required Pages
-
-## Login Page
-
-Campos:
-
-- E-mail
-- Senha
-
-Botões:
-
-- Entrar
-- Criar conta
-
----
-
-## Register Page
-
-Campos:
-
-- Nome
-- E-mail
-- Senha
-
----
-
-## Chat Page
-
-Elementos:
-
-- Histórico da conversa.
-- Campo de mensagem.
-- Botão de envio.
-- Sugestões rápidas.
-
-Esta deve ser a principal tela do sistema.
-
----
-
-## Dashboard Page
-
-Componentes:
-
-- Cartão de saldo.
-- Cartão de receitas.
-- Cartão de despesas.
-- Gráfico de categorias.
-- Gráfico mensal.
-- Insights financeiros.
-
----
-
-## Goals Page
-
-Componentes:
-
-- Lista de metas.
-- Barra de progresso.
-- Botão para criar meta.
-
----
-
-## Profile Page
-
-Componentes:
-
-- Dados do usuário.
-- Preferências.
-- Configurações.
-
----
-
-# Database Structure
-
-## Users
-
-- id
-- name
-- email
-- password
-- created_at
-
-## Transactions
-
-- id
-- user_id
-- type
-- category
-- amount
-- description
-- date
-- created_at
-
-## Goals
-
-- id
-- user_id
-- title
-- target_amount
-- current_amount
-- deadline
-- created_at
-
----
-
-# Visual Design
-
-Estilo moderno inspirado em:
-
-- Notion
-- Linear
-- Rocket Money
-- Monzo
-
-Características:
-
-- Minimalista.
-- Muito espaço em branco.
-- Layout limpo.
-- Paleta neutra.
-- Interface mobile-first.
-- Componentes modernos.
-- Bordas suaves.
-- Sombras discretas.
-
----
-
-# Technical Requirements
-
-- Aplicação Web responsiva.
-- Mobile-first.
-- Autenticação de usuários.
-- Persistência de dados.
-- Dashboard em tempo real.
-- Estrutura preparada para futuras integrações com IA.
-
----
-
-# Out of Scope
-
-Não implementar nesta versão:
-
-- Integração bancária.
-- Open Finance.
-- Investimentos.
-- Cartão de crédito avançado.
-- Compartilhamento familiar.
-- Planejamento tributário.
-- Marketplace financeiro.
-
----
-
-# Success Criteria
-
-O MVP será considerado bem-sucedido quando um usuário iniciante conseguir:
-
-1. Criar conta.
-2. Registrar receitas e despesas via conversa.
-3. Visualizar seu saldo.
-4. Acompanhar metas financeiras.
-5. Entender melhor seus hábitos de consumo.
-
-A experiência deve parecer uma conversa com um assistente financeiro pessoal, simples, amigável e acessível.
-
+```bash
+npm run test
 ```
 
+Para verificar tipos do TypeScript:
 
+```bash
+npx tsc --noEmit
+```
 
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença [MIT](LICENSE).
