@@ -20,22 +20,17 @@
 
 ## 📸 Demonstração e Telas do App
 
-> *Adicione as capturas de tela do projeto na pasta `/docs/screenshots` ou referencie os links aqui.*
+<div align="center">
 
-### 1. Autenticação e Boas-Vindas
-| Login & Cadastro | Apresentação / Onboarding |
+| Conversa Inteligente (Chat da Fina) | Painel Financeiro e Gráficos |
 | :---: | :---: |
-| *(coloque aqui o print da tela de login)* | *(coloque aqui o print do onboarding da Fina)* |
+| <img src="docs/screenshots/chat.png" alt="Conversa com a Fina" width="450" /> | <img src="docs/screenshots/painel.png" alt="Painel Financeiro" width="450" /> |
 
-### 2. Conversa Inteligente (Chat com a Fina)
-| Chat em Ação | Sugestões Rápidas |
+| Gestão de Metas | Perfil e Preferências |
 | :---: | :---: |
-| *(coloque aqui o print do chat com a Fina anotando um gasto)* | *(coloque aqui o print das opções rápidas)* |
+| <img src="docs/screenshots/metas.png" alt="Metas Financeiras" width="450" /> | <img src="docs/screenshots/perfil.png" alt="Perfil do Usuário" width="450" /> |
 
-### 3. Painel Financeiro e Metas
-| Painel com Gráficos e Alertas | Metas com Barra de Progresso |
-| :---: | :---: |
-| *(coloque aqui o print do painel)* | *(coloque aqui o print das metas)* |
+</div>
 
 ---
 
